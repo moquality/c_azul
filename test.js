@@ -14,7 +14,8 @@ describe('Test', function() {
 			automationName: 'UiAutomator2',
 			appWaitActivity: '*',
 			autoGrantPermissions: true,
-			noReset: false
+			noReset: false,
+			autoLaunch: false
 		})
 		// Have Appium automatically determine which permissions your app requires and grant them to the app on install.
 		// http://appium.io/docs/en/writing-running-appium/caps/
@@ -26,6 +27,7 @@ describe('Test', function() {
 	})
 
 	it('Login', async () => {
+		await driver.launchApp()
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/emailEditText\")").then(target => target.type("tej.mhatre@azularc.com"))
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/passwordEditText\")").then(target => target.type("12345678"))
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/loginButton\")").then(target => target.click())
@@ -41,4 +43,13 @@ describe('Test', function() {
 		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Manual Clock In/Out\")").then(target => target.click())
 		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Tej Mhatre\")").then(target => target.click())
 	})
+
+	it('Check Project Overview', async () => {
+		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/projectOverview\")").then(target => target.click())
+		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/percentageButton\")").then(target => target.click())
+		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/hoursButton\")").then(target => target.click())
+		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/menuRight\")").then(target => target.click())
+		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Project Home\")").then(target => target.click())
+	})
+
 })
