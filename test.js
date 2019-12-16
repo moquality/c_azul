@@ -13,7 +13,11 @@ describe('Test', function() {
 			deviceName: 'Device',
 			automationName: 'UiAutomator2',
 			appWaitActivity: '*',
+			autoGrantPermissions: true,
+			noReset: false
 		})
+		// Have Appium automatically determine which permissions your app requires and grant them to the app on install.
+		// http://appium.io/docs/en/writing-running-appium/caps/
 		await driver.setImplicitWaitTimeout(15000)
 	})
 
