@@ -27,8 +27,9 @@ describe('Test', function() {
 
 	it('First Test', async () => {
 		await driver.launchApp()
-		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/emailEditText\")").then(target => target.type("email"))
-		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/passwordEditText\")").then(target => target.type("pass"))
+		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/emailEditText\")").then(target => target.type("tej.mhatre@azularc.com"))
+		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/passwordEditText\")").then(target => target.type("12345678"))
+		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/loginButton\")").then(target => target.click())
 		await new Promise(resolve => setTimeout(resolve, 5000))
 		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Next\")").then(target => target.click())
 	})
