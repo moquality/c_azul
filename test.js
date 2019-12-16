@@ -32,7 +32,13 @@ describe('Test', function() {
 		await new Promise(resolve => setTimeout(resolve, 1000))
 	})
 
-	it('Select Project', async () => {
-		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Select Project\")").then(target => target.click())
+	it('Select the project Painting Project', async () => {
+		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Painting Project\")").then(target => target.click())
+	})
+
+	it('Clock In Tej Mhatre', async () => {
+		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/clockinout\")").then(target => target.click())
+		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Manual Clock In/Out\")").then(target => target.click())
+		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Tej Mhatre\")").then(target => target.click())
 	})
 })
