@@ -1,7 +1,7 @@
 {
   "env": "node",
-  "project": "greenlight",
-  "app": "android:me.greenlight.stage",
+  "project": "azularc",
+  "app": "android:com.example.allisonsmith",
   "pre": "npm install",
   "run": "npm run test"
 }
