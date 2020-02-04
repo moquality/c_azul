@@ -9,7 +9,7 @@ describe('Test', function() {
 	before(async () => {
 		await driver.init({
 			platformName: 'android',
-			app: 'https://firebasestorage.googleapis.com/v0/b/mq-prod.appspot.com/o/files%2Fazularc%2F1576072839925%2FAllison%20Smith.apk?alt=media&token=44a41540-711f-4e8f-b771-c9ee0418663f',
+			app: 'https://firebasestorage.googleapis.com/v0/b/mq-prod.appspot.com/o/files%2Fazularc%2F1580808513284%2Fapp-debug.apk?alt=media&token=c7d37497-99fc-41fe-badb-f0250457d44d',
 			deviceName: 'Device',
 			automationName: 'UiAutomator2',
 			appWaitActivity: '*',
