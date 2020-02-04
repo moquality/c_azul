@@ -2,6 +2,8 @@
 
 [Link to the project](https://app.moquality.com/project/azularc)
 
+![](testvideo.gif)
+
 ## Get Started
 
 Install the MQLAB CLI with
