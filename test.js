@@ -9,13 +9,12 @@ describe('Test', function() {
 	before(async () => {
 		await driver.init({
 			platformName: 'android',
-			app: 'https://firebasestorage.googleapis.com/v0/b/mq-prod.appspot.com/o/files%2Fazularc%2F1580808513284%2Fapp-debug.apk?alt=media&token=c7d37497-99fc-41fe-badb-f0250457d44d',
+			app: 'https://storage.googleapis.com/mq-prod.appspot.com/projects/azularc/apps/android:com.example.allisonsmith/latest.apk',
 			deviceName: 'Device',
 			automationName: 'UiAutomator2',
 			appWaitActivity: '*',
 			autoGrantPermissions: true,
 			noReset: false,
-			autoLaunch: false
 		})
 		// Have Appium automatically determine which permissions your app requires and grant them to the app on install.
 		// http://appium.io/docs/en/writing-running-appium/caps/
@@ -27,7 +26,6 @@ describe('Test', function() {
 	})
 
 	it('Login', async () => {
-		await driver.launchApp()
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/emailEditText\")").then(target => target.type("tej.mhatre@azularc.com"))
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/passwordEditText\")").then(target => target.type("12345678"))
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/loginButton\")").then(target => target.click())
