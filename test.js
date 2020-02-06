@@ -32,22 +32,8 @@ describe('Test', function() {
 		await new Promise(resolve => setTimeout(resolve, 1000))
 	})
 
-	it('Select the project Painting Project', async () => {
-		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Painting Project\")").then(target => target.click())
-	})
-
-	it('Clock In Tej Mhatre', async () => {
-		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/clockinout\")").then(target => target.click())
-		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Manual Clock In/Out\")").then(target => target.click())
-		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Tej Mhatre\")").then(target => target.click())
-	})
-
-	it('Check Project Overview', async () => {
-		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/projectOverview\")").then(target => target.click())
-		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/percentageButton\")").then(target => target.click())
-		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/hoursButton\")").then(target => target.click())
+	it('Explore Menu', async () => {
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/menuRight\")").then(target => target.click())
-		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Project Home\")").then(target => target.click())
 	})
 
 })
