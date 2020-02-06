@@ -9,7 +9,7 @@ describe('Test', function() {
 	before(async () => {
 		await driver.init({
 			platformName: 'android',
-			app: 'https://storage.googleapis.com/mq-prod.appspot.com/projects/azularc/apps/android:com.example.allisonsmith/latest.apk',
+			app: 'C:\Users\carin\Desktop\app-debug.apk',
 			deviceName: 'Device',
 			automationName: 'UiAutomator2',
 			appWaitActivity: '*',
