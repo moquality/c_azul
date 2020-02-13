@@ -48,9 +48,9 @@ describe('Test', function() {
 		await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(2)").then(target => target.click())
 	})
 	
-	it('Get Extras', async() => 
+	it('Get Extras', async() => {
 		await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.widget.TextView\").text(\"Extras\")").then(target => target.click())
-		
+	})
 		
 	{)
 	
