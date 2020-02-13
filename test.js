@@ -9,7 +9,7 @@ describe('Test', function() {
 	before(async () => {
 		await driver.init({
 			platformName: 'android',
-			app: 'C:\Users\carin\Desktop\app-debug.apk',
+			app: 'D://Roma//app-debug.apk',
 			deviceName: 'Device',
 			automationName: 'UiAutomator2',
 			appWaitActivity: '*',
@@ -42,14 +42,14 @@ describe('Test', function() {
 		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Tej Mhatre\")").then(target => target.click())
 	})
 
-	it('Check Project Overview', async () => {
+	/*it('Check Project Overview', async () => {
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/projectOverview\")").then(target => target.click())
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/percentageButton\")").then(target => target.click())
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/hoursButton\")").then(target => target.click())
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/menuRight\")").then(target => target.click())
 		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Project Home\")").then(target => target.click())
-	})
-
+	})*/
+ 
 	// Add a comment
 
 })
