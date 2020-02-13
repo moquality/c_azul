@@ -52,8 +52,6 @@ describe('Test', function() {
 		await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.widget.TextView\").text(\"Extras\")").then(target => target.click())
 	})
 		
-	{)
-	
 
 	/*it('Check Project Overview', async () => {
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/projectOverview\")").then(target => target.click())
