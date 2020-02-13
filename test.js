@@ -43,10 +43,10 @@ describe('Test', function() {
 		//await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.widget.TextView\").text(\"Select\")").then(target => target.click())
 	})
 	
-	it('View Employee defaults', async() => {
+	/*it('View Employee defaults', async() => {
 		await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.widget.TextView\").text(\"View Employee Details\")").then(target => target.click())
 		await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(2)").then(target => target.click())
-	})
+	})*/
 	
 	it('Get Extras', async() => {
 		await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.widget.TextView\").text(\"Extras\")").then(target => target.click())
