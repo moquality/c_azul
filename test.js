@@ -46,7 +46,7 @@ describe('Test', function() {
 	
 	it('Select Menu', async () => {
 	await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/menuRight\")").then(target => target.click())
-	}
+	})
 	
 	/*it('View Employee defaults', async() => {
 		await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.widget.TextView\").text(\"View Employee Details\")").then(target => target.click())
