@@ -40,6 +40,7 @@ describe('Test', function() {
 		await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/clockinout\")").then(target => target.click())
 		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Manual Clock In/Out\")").then(target => target.click())
 		await driver.elementByAndroidUIAutomator("new UiSelector().text(\"Tej Mhatre\")").then(target => target.click())
+		await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.widget.TextView\").text(\"Select\")").then(target => target.click())
 	
 	})
 	
