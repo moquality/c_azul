@@ -50,6 +50,7 @@ describe('Test', function() {
 	
 	it('Select Employees', async () => {
 	await driver.elementByAndroidUIAutomator("new UiSelector().resourceId(\"com.example.allisonsmith:id/ll_empreqreview\")").then(target => target.click())
+	await driver.elementByAndroidUIAutomator("new UiSelector().className(\"android.widget.LinearLayout\").instance(6)").then(target => target.click())
 	
 	})
 	
